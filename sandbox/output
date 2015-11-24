@@ -9,15 +9,9 @@ HikerTest.java:9: error: cannot find symbol
             ^
   symbol:   method updateQuality()
   location: variable item of type Item
-HikerTest.java:11: error: constructor Item in class Item cannot be applied to given types;
-        assertEquals(new Item("noraml",7,9),item);
-                     ^
-  required: no arguments
-  found: String,int,int
-  reason: actual and formal argument lists differ in length
 HikerTest.java:12: error: cannot find symbol
         assertEquals(9,item.getSellIn());
                            ^
   symbol:   method getSellIn()
   location: variable item of type Item
-4 errors
+3 errors
