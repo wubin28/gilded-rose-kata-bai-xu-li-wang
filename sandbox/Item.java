@@ -15,7 +15,7 @@ public class Item {
            if(this.sellIn > 0){       
                this.quality += 1; 
            }else{
-                this.quality = 50; 
+                this.quality += 2; 
            }
         }else{
             if(this.sellIn < 0){
