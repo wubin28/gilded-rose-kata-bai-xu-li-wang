@@ -11,8 +11,12 @@ public class Item {
     }
 
     public void updateQuality(){
-        if(this.itemType == "aged_brie"){        
-           this.quality += 1; 
+        if(this.itemType == "aged_brie"){ 
+           if(this.sellIn > 0){       
+               this.quality += 1; 
+           }else{
+                this.quality = 50
+           }
         }else{
             if(this.sellIn < 0){
                 this.quality -=2;
