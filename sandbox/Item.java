@@ -16,10 +16,10 @@ public class Item {
     }
 
     public int getSellIn(){
-        return 13;
+        return this.sellIn;
     }
 
     public int getQuality(){
-        return 9;
+        return this.quality;
     }
 }
