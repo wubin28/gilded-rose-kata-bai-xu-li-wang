@@ -11,8 +11,8 @@ public class Item {
     }
 
     public void updateQuality(){
-        this.sellIn = 13;
-        this.quality = 9; 
+        this.sellIn -= 1;
+        this.quality -= 1; 
     }
 
     public int getSellIn(){
