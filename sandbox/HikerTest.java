@@ -4,10 +4,12 @@ import static org.junit.Assert.*;
 public class HikerTest {
 
     @Test
-    public void life_the_universe_and_everything() {
-        int expected = 42;
-        int actual = Hiker.answer();
-        assertEquals(expected, actual);
+    public void after_update_lower_both_values_at_each_day(){
+        Item item = new Item("normal",8,10);
+        item.updateQuality();
+        
+        assertEquals(new Item("noraml",7,9),item);
+        assertEquals(9,item.getSellIn());
+        
     }
-   
 }
