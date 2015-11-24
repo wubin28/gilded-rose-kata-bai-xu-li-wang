@@ -4,7 +4,7 @@ import static org.junit.Assert.*;
 public class ItemTest {
 
     @Test
-    public void after_update_lower_both_values_at_each_day(){
+    public void at_the_end_of_each_day_our_sytem_lowers_both_values_for_each_normal_item(){
         //Given
         Item item = new Item("normal",14,10);
 
