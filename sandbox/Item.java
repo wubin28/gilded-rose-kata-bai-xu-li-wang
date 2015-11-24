@@ -10,5 +10,10 @@ public class Item {
         this.quality = quality;
     }
 
-    //public 
+    public void updateQuality(){
+        this.sellIn = 7;
+        this.quality = 9; 
+    }
+
+    
 }

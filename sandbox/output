@@ -1,11 +1,6 @@
-ItemTest.java:9: error: cannot find symbol
-        item.updateQuality();
-            ^
-  symbol:   method updateQuality()
-  location: variable item of type Item
 ItemTest.java:12: error: cannot find symbol
         assertEquals(9,item.getSellIn());
                            ^
   symbol:   method getSellIn()
   location: variable item of type Item
-2 errors
+1 error
