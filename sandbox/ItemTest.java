@@ -42,6 +42,17 @@ public class ItemTest {
         assertEquals(11,item.getQuality());    
     }
 
+    @Test
+    public void once_sellIn_is_negative_aged_brie_increases_in_quality_by_2_when_geting_older(){
+        //Given
+        Item item = new Item("aged_brie", -49, 48);
 
+        //When
+        item.updateQuality();
+
+        //Then
+        assertEquals(-50,item.getSellIn());
+        assertEquals(50,item.getQuality());    
+    }
     //TODO
 }
