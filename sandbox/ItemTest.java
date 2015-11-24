@@ -1,7 +1,7 @@
 import org.junit.*;
 import static org.junit.Assert.*;
 
-public class HikerTest {
+public class ItemTest {
 
     @Test
     public void after_update_lower_both_values_at_each_day(){

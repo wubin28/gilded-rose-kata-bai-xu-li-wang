@@ -1,6 +1,14 @@
 
 public class Item {
-    public int sellIn;
-    public int quality;
+    private String itemType;
+    private int sellIn;
+    private int quality;
     
+    public Item(String itemType, int sellIn, int quality){
+        this.itemType = itemType;
+        this.sellIn = sellIn;
+        this.quality = quality;
+    }
+
+    //public 
 }

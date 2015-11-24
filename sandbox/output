@@ -1,17 +1,11 @@
-HikerTest.java:8: error: constructor Item in class Item cannot be applied to given types;
-        Item item = new Item("normal",8,10);
-                    ^
-  required: no arguments
-  found: String,int,int
-  reason: actual and formal argument lists differ in length
-HikerTest.java:9: error: cannot find symbol
+ItemTest.java:9: error: cannot find symbol
         item.updateQuality();
             ^
   symbol:   method updateQuality()
   location: variable item of type Item
-HikerTest.java:12: error: cannot find symbol
+ItemTest.java:12: error: cannot find symbol
         assertEquals(9,item.getSellIn());
                            ^
   symbol:   method getSellIn()
   location: variable item of type Item
-3 errors
+2 errors
