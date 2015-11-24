@@ -29,5 +29,19 @@ public class ItemTest {
         assertEquals(8, item.getQuality());
     }
 
+    @Test
+    public void aged_brie_actually_increases_in_quality_when_geting_older(){
+        //Given
+        Item item = new Item("aged_brie", 14, 10);
+
+        //When
+        item.updateQuality();
+
+        //Then
+        assertEquals(13,item.getSellIn());
+        assertEquals(11,item.getQuality());    
+    }
+
+
     //TODO
 }
