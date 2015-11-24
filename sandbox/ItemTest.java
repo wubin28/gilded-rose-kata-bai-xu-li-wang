@@ -6,7 +6,7 @@ public class ItemTest {
     @Test
     public void at_the_end_of_each_day_our_sytem_lowers_both_values_for_each_normal_item(){
         //Given
-        Item item = new Item("normal",14,10);
+        Item item = new Item("normal", 14, 10);
 
         //When
         item.updateQuality();
@@ -17,16 +17,16 @@ public class ItemTest {
     }
     
     @Test
-    public void after_update_quality_degrades_twice_when_sell_by_date_passed(){
+    public void once_the_sell_by_date_has_passed_quality_degrades_twice_as_fast(){
         //Given
-        Item item = new Item("normal",-5,10);
+        Item item = new Item("normal", -5, 10);
 
         //When
         item.updateQuality();
 
         //Then
-        assertEquals(-6,item.getSellIn());
-        assertEquals(8,item.getQuality());
+        assertEquals(-6, item.getSellIn());
+        assertEquals(8, item.getQuality());
     }
 
     //TODO
