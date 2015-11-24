@@ -11,8 +11,13 @@ public class Item {
     }
 
     public void updateQuality(){
-        this.sellIn -= 1;
-        this.quality -= 1; 
+        if(this.sellIn < 0){
+            this.sellIn = -6;
+            this.quality =8;
+        }else{
+            this.sellIn -= 1;
+            this.quality -= 1; 
+        }
     }
 
     public int getSellIn(){
