@@ -68,5 +68,17 @@ public class ItemTest {
         assertEquals(11,item.getQuality());    
     }
 
+    @Test
+    public void backstage_passes_increases_in_quality_by_2_when_sellIn_between_5_and_10(){
+        //Given
+        Item item = new Item("backstage_passes", 7, 10);
+
+        //When
+        item.updateQuality();
+
+        //Then
+        assertEquals(6,item.getSellIn());
+        assertEquals(12,item.getQuality());    
+    }
     
 }
