@@ -54,5 +54,19 @@ public class ItemTest {
         assertEquals(-50,item.getSellIn());
         assertEquals(50,item.getQuality());    
     }
-    //TODO
+    
+     @Test
+    public void backstage_passes_increases_in_quality_by_1_when_sellIn_greater_than_10(){
+        //Given
+        Item item = new Item("backstage_passes", 14, 10);
+
+        //When
+        item.updateQuality();
+
+        //Then
+        assertEquals(13,item.getSellIn());
+        assertEquals(11,item.getQuality());    
+    }
+
+    
 }
