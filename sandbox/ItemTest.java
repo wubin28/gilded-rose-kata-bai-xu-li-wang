@@ -55,7 +55,7 @@ public class ItemTest {
         assertEquals(50,item.getQuality());    
     }
     
-     @Test
+    @Test
     public void backstage_passes_increases_in_quality_by_1_when_sellIn_greater_than_10(){
         //Given
         Item item = new Item("backstage_passes", 14, 10);

@@ -17,6 +17,8 @@ public class Item {
            }else{
                 this.quality += 2; 
            }
+        }else if(this.itemType == "backstage_passes"){
+            this.quality = 11;
         }else{
             if(this.sellIn < 0){
                 this.quality -=2;
