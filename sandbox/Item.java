@@ -15,5 +15,7 @@ public class Item {
         this.quality = 9; 
     }
 
-    
+    public int getSellIn(){
+        return 9;
+    }
 }
