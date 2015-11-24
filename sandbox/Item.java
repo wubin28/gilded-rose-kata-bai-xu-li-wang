@@ -11,13 +11,17 @@ public class Item {
     }
 
     public void updateQuality(){
-        if(this.sellIn < 0){
-            this.quality -=2;
+        if(this.itemTpye == "Aged Brie"){
+           this.sellIn = 13;
+           this.quality = 11; 
         }else{
-            this.quality -= 1; 
+            if(this.sellIn < 0){
+                this.quality -=2;
+            }else{
+                this.quality -= 1; 
+            }
+            this.sellIn -= 1;
         }
-        this.sellIn -= 1;
-
     }
 
     public int getSellIn(){
