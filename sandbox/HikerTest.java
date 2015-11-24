@@ -9,4 +9,5 @@ public class HikerTest {
         int actual = Hiker.answer();
         assertEquals(expected, actual);
     }
+   
 }
