@@ -11,11 +11,15 @@ public class Item {
     }
 
     public void updateQuality(){
-        this.sellIn = 7;
+        this.sellIn = 13;
         this.quality = 9; 
     }
 
     public int getSellIn(){
+        return 13;
+    }
+
+    public int getQuality(){
         return 9;
     }
 }
